@@ -14,4 +14,5 @@
 9. buat user baru pakai tinker: ` User::create(['email' => 'mukidi@gmail.com', 'password' => Hash::make('qwerty'), 'name' => 'Mukidi']);`
 10. run `php artisan migrate`
 11. run `php artisan serve`
+12. akses api documentation: `http://localhost:8000/api/documentation`
 
