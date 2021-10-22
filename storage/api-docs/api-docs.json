@@ -1,0 +1,62 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Meigire OpenApi Demo Documentation",
+        "description": "Meigire demo backend test OpenApi description",
+        "contact": {
+            "email": "meigire0583@gmail.com"
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        },
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "http://localhost:8000/api",
+            "description": "Meigire Demo API Server"
+        }
+    ],
+    "paths": {
+        "/debug-sentry": {
+            "get": {
+                "tags": [
+                    "All"
+                ],
+                "summary": "Untuk mencoba integrasi sentry sesuai dengan soal nomor 4",
+                "description": "Expected result adalah exception",
+                "operationId": "167e06ebbc09e593eefe7dc09f1f98b3",
+                "responses": {
+                    "500": {
+                        "description": "Successful operation"
+                    }
+                }
+            }
+        },
+        "/filter": {
+            "get": {
+                "tags": [
+                    "All"
+                ],
+                "summary": "Filter object sesuai dengan soal nomor 3",
+                "description": "Returns hasil filter yang dibutuhkan. Hasil return dalam bentuk json, jika ingin lihat bentuk array, silahkan tambahkan dd($result) sebelum return.",
+                "operationId": "16b3205accb2baa1ccd40b524a9b895b",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    }
+                }
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "All",
+            "description": "Semua API endpoints yang ada"
+        }
+    ],
+    "security": [
+        []
+    ]
+}

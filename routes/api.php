@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\DebugSentryController;
 use App\Http\Controllers\Api\FilterObjectController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -21,6 +22,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get('filter', FilterObjectController::class);
 
-Route::get('/debug-sentry', function () {
-    throw new Exception('My first Sentry error!');
-});
+Route::get('/debug-sentry', DebugSentryController::class);

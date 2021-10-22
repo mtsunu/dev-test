@@ -8,6 +8,18 @@ use Illuminate\Support\Arr;
 
 class FilterObjectController extends Controller
 {
+    /**
+     * @OA\Get(
+     *      path="/filter",
+     *      tags={"All"},
+     *      summary="Filter object sesuai dengan soal nomor 3",
+     *      description="Returns hasil filter yang dibutuhkan. Hasil return dalam bentuk json, jika ingin lihat bentuk array, silahkan tambahkan dd($result) sebelum return.",
+     *      @OA\Response(
+     *          response=200,
+     *          description="Successful operation",
+     *       ),
+     *     )
+     */
     public function __invoke() : JsonResponse
     {
         $jsonString = file_get_contents(__DIR__ . '/filter-data.json');
