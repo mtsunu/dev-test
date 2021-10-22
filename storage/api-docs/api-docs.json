@@ -48,6 +48,42 @@
                     }
                 }
             }
+        },
+        "/reqres/login": {
+            "post": {
+                "tags": [
+                    "All"
+                ],
+                "summary": "Integrasi api dengan handle selain response success - login (nomor 2)",
+                "description": "Returns json object. Error object original yang dikembalikan dari reqres.in ada di property original.",
+                "operationId": "80b26cee93b5eeb304be1b1dd4602baa",
+                "responses": {
+                    "500": {
+                        "description": "Terjadi error dari reqres"
+                    },
+                    "200": {
+                        "description": "Tidak terjadi error dari reqres"
+                    }
+                }
+            }
+        },
+        "/reqres/register": {
+            "post": {
+                "tags": [
+                    "All"
+                ],
+                "summary": "Integrasi api dengan handle selain response success - register (nomor 2)",
+                "description": "Returns json object. Error object original yang dikembalikan dari reqres.in ada di property original.",
+                "operationId": "81b12db92b15e153b86f633600269237",
+                "responses": {
+                    "500": {
+                        "description": "Terjadi error dari reqres"
+                    },
+                    "200": {
+                        "description": "Tidak terjadi error dari reqres"
+                    }
+                }
+            }
         }
     },
     "tags": [
