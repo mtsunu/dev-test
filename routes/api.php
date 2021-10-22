@@ -20,3 +20,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('filter', FilterObjectController::class);
+
+Route::get('/debug-sentry', function () {
+    throw new Exception('My first Sentry error!');
+});
