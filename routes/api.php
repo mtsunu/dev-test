@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\DebugSentryController;
 use App\Http\Controllers\Api\FilterObjectController;
 use App\Http\Controllers\Api\ReqResController;
@@ -30,3 +31,16 @@ Route::prefix('reqres')
         Route::post('register', [ReqResController::class, 'register']);
         Route::post('login', [ReqResController::class, 'login']);
     });
+
+Route::group([
+
+    'middleware' => 'api',
+    'prefix' => 'auth'
+
+], function ($router) {
+
+    Route::post('login', [AuthController::class, 'login']);
+    Route::post('logout', [AuthController::class, 'logout']);
+    Route::post('me', [AuthController::class, 'me']);
+
+});

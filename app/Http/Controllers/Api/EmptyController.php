@@ -28,8 +28,23 @@ class EmptyController extends Controller
 
      *
      * @OA\Tag(
-     *     name="All",
-     *     description="Semua API endpoints yang ada"
+     *     name="No. 1",
+     *     description="Soal nomor 1"
+     * )
+     *
+     * @OA\Tag(
+     *     name="No. 2",
+     *     description="Soal nomor 2"
+     * )
+     *
+     * @OA\Tag(
+     *     name="No. 3",
+     *     description="Soal nomor 3"
+     * )
+     *
+     * @OA\Tag(
+     *     name="No. 4",
+     *     description="Soal nomor 4"
      * )
      */
 }

@@ -19,10 +19,55 @@
         }
     ],
     "paths": {
+        "/auth/login": {
+            "post": {
+                "tags": [
+                    "No. 1"
+                ],
+                "summary": "Auth login",
+                "description": "Get a JWT via given credentials.",
+                "operationId": "99d66635c4992aeaa6aa44ff653d0563",
+                "responses": {
+                    "200": {
+                        "description": "Login sukses"
+                    }
+                }
+            }
+        },
+        "/auth/me": {
+            "post": {
+                "tags": [
+                    "No. 1"
+                ],
+                "summary": "Cek login",
+                "description": "Get the authenticated User.",
+                "operationId": "6c5ac2962d887b6c64f194672cfd6d99",
+                "responses": {
+                    "200": {
+                        "description": "User object"
+                    }
+                }
+            }
+        },
+        "/auth/logout": {
+            "post": {
+                "tags": [
+                    "No. 1"
+                ],
+                "summary": "logout",
+                "description": "Log the user out (Invalidate the token).",
+                "operationId": "6abf3b64a4bc7838d56346f05a5153af",
+                "responses": {
+                    "200": {
+                        "description": "Logout berhasil"
+                    }
+                }
+            }
+        },
         "/debug-sentry": {
             "get": {
                 "tags": [
-                    "All"
+                    "No. 4"
                 ],
                 "summary": "Untuk mencoba integrasi sentry sesuai dengan soal nomor 4",
                 "description": "Expected result adalah exception",
@@ -37,7 +82,7 @@
         "/filter": {
             "get": {
                 "tags": [
-                    "All"
+                    "No. 3"
                 ],
                 "summary": "Filter object sesuai dengan soal nomor 3",
                 "description": "Returns hasil filter yang dibutuhkan. Hasil return dalam bentuk json, jika ingin lihat bentuk array, silahkan tambahkan dd($result) sebelum return.",
@@ -52,7 +97,7 @@
         "/reqres/login": {
             "post": {
                 "tags": [
-                    "All"
+                    "No. 2"
                 ],
                 "summary": "Integrasi api dengan handle selain response success - login (nomor 2)",
                 "description": "Returns json object. Error object original yang dikembalikan dari reqres.in ada di property original.",
@@ -70,7 +115,7 @@
         "/reqres/register": {
             "post": {
                 "tags": [
-                    "All"
+                    "No. 2"
                 ],
                 "summary": "Integrasi api dengan handle selain response success - register (nomor 2)",
                 "description": "Returns json object. Error object original yang dikembalikan dari reqres.in ada di property original.",
@@ -88,8 +133,20 @@
     },
     "tags": [
         {
-            "name": "All",
-            "description": "Semua API endpoints yang ada"
+            "name": "No. 1",
+            "description": "Soal nomor 1"
+        },
+        {
+            "name": "No. 2",
+            "description": "Soal nomor 2"
+        },
+        {
+            "name": "No. 3",
+            "description": "Soal nomor 3"
+        },
+        {
+            "name": "No. 4",
+            "description": "Soal nomor 4"
         }
     ],
     "security": [

@@ -11,7 +11,7 @@ class FilterObjectController extends Controller
     /**
      * @OA\Get(
      *      path="/filter",
-     *      tags={"All"},
+     *      tags={"No. 3"},
      *      summary="Filter object sesuai dengan soal nomor 3",
      *      description="Returns hasil filter yang dibutuhkan. Hasil return dalam bentuk json, jika ingin lihat bentuk array, silahkan tambahkan dd($result) sebelum return.",
      *      @OA\Response(

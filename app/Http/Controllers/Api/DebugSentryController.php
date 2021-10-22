@@ -11,7 +11,7 @@ class DebugSentryController extends Controller
     /**
      * @OA\Get(
      *      path="/debug-sentry",
-     *      tags={"All"},
+     *      tags={"No. 4"},
      *      summary="Untuk mencoba integrasi sentry sesuai dengan soal nomor 4",
      *      description="Expected result adalah exception",
      *      @OA\Response(

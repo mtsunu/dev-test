@@ -12,7 +12,7 @@ class ReqResController extends Controller
     /**
      * @OA\POST(
      *      path="/reqres/login",
-     *      tags={"All"},
+     *      tags={"No. 2"},
      *      summary="Integrasi api dengan handle selain response success - login (nomor 2)",
      *      description="Returns json object. Error object original yang dikembalikan dari reqres.in ada di property original.",
      *      @OA\Response(
@@ -36,7 +36,7 @@ class ReqResController extends Controller
     /**
      * @OA\POST(
      *      path="/reqres/register",
-     *      tags={"All"},
+     *      tags={"No. 2"},
      *      summary="Integrasi api dengan handle selain response success - register (nomor 2)",
      *      description="Returns json object. Error object original yang dikembalikan dari reqres.in ada di property original.",
      *      @OA\Response(
